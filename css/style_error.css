@@ -1,0 +1,253 @@
+body{
+    background-color: #f4f0fa;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    margin: 0 auto;
+}
+
+
+/* Titulo Challenge */
+.cabecera{
+    height: auto;
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    color: #7e2af2;
+    font-size: 24px;
+    line-height: 3em;
+}
+
+
+/* Cuerpo */
+main{
+    margin: 0 auto;
+}
+
+.principal{
+    position: relative;
+    width: 90%;
+    height: auto;
+    background-color: #dccef0;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+
+/* Logo */
+.aluralogo{
+    background-color: #440a94;
+    height: 80px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 5px 5px 0px 0px;
+    padding-left: 400px;
+}
+
+.logo{
+    background-image: url(../img/heart.png);
+    background-repeat: no-repeat;
+    padding: 16px 140px;
+    cursor: pointer;
+    font-family: "Press Start 2P", system-ui;
+    color: #ede7f5;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+
+/* Cuerpo central */
+.seccion_error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.seccion_error button{
+    height: auto;
+    width: 200px;
+    border-radius: 20px;
+    padding: 1em;
+    text-align: center;
+    cursor: pointer;
+    background: #440a94;
+    border: 1px solid #2d0e58;
+    box-shadow: 3px 3px 0 #af7cf5;
+}
+
+.seccion_error a{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    color: #ede7f5;
+    font-size: 18px;
+    line-height: 12px;
+}
+
+.seccion_error button:hover{
+    border-radius: 21px;
+    font-size: 19px;
+    line-height: 11px;
+    box-shadow: 2px 2px 0 #2d0e58;
+}
+
+.seccion_error button:active{
+    border-radius: 20px;
+    font-size: 18px;
+    box-shadow: 3px 3px 0 #2d0e58;
+}
+
+
+
+/* Pie de página */
+.footer_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    background-color: #440a94;
+    border-radius: 0 0 5px 5px;
+}
+
+.footer_items h1{
+    margin: 15px 0 0 100px;
+ 
+}
+
+.footer_items p{
+    color: #dccef0;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.footer_texto{
+    font-style: italic;
+}
+
+
+
+@media (max-width: 768px) {
+
+}
+
+
+
+
+@media screen and (max-width: 480px){
+
+    /* Titulo Challenge */
+header{
+    margin: 0 auto;
+}
+
+.titulo{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.5em;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+
+/* Cuerpo */
+.principal{
+    width: 100%;
+}
+
+
+
+/* Logo */
+.aluralogo{
+    padding: 16px 60px;
+    border-radius: 0px;
+}
+
+
+.logo{
+    font-size: 22px;
+}
+    
+
+
+
+/* Cuerpo central */
+.seccion_error{
+    flex-direction: column;
+    padding: 2em;
+}
+
+.seccion_error img{
+    width: 250px;
+    padding: 20px 0;
+}
+
+
+/* Boton */
+.seccion_error button{
+    width: 190px;
+    padding: 0.8em;
+    border-radius: 19px;
+}
+
+.seccion_error a{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 11px;
+}
+
+.seccion_error button:hover{
+    border-radius: 20px;
+    font-size: 17px;
+    box-shadow: 1px 1px 0 #2d0e58;
+}
+
+.seccion_error button:active{
+    border-radius: 19px;
+    font-size: 16px;
+    box-shadow: 2px 2px 0 #2d0e58;
+}
+
+
+
+
+/* Pie de página */
+.footer_items{
+    border-radius: 0px;
+    padding: 20px 0;
+}
+
+.footer_items h1{
+    margin: 0 0 0 120px;
+    font-size: 22px;
+ 
+}
+
+.footer_items p{
+    font-size: 13px;
+    margin: 0px;
+    padding: 5px 0 0 0;
+}
+
+.footer_texto{
+    color: #dccef0;
+    font-style: italic;
+}
+
+}

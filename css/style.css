@@ -1,0 +1,467 @@
+body{
+    background-color: #f4f0fa;
+    font-family: 'Inter', sans-serif;
+}
+
+header{
+    margin: 0 auto;
+}
+
+
+/* Titulo Challenge */
+.cabecera{
+    height: auto;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.titulo{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 600;
+    font-style: normal;
+    color: #7e2af2;
+    font-size: 24px;
+    line-height: 3em;
+}
+
+
+/* Cuerpo */
+main{
+    margin: 0 auto;
+}
+
+.principal{
+    width: 90%;
+    height: auto;
+    background-color: #dccef0;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+
+/* Logo */
+.aluralogo{
+    background-color: #440a94;
+    height: 80px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 5px 5px 0px 0px;
+    padding-left: 400px;
+}
+
+.logo{
+    background-image: url(../img/heart.png);
+    background-repeat: no-repeat;
+    padding: 16px 140px;
+    cursor: pointer;
+    font-family: "Press Start 2P", system-ui;
+    color: #ede7f5;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+}
+
+
+/* Cuerpo central */
+.secciones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+
+/* Seccion izquierda */
+.seccionuno{
+    height: auto;
+    width: 38%;
+    position: relative;
+    display: inherit;
+    flex-direction: column;
+    padding: 2em;
+}
+
+
+/* Titulo agregar */
+.title{
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    text-align: center;
+    height: auto;
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+    color: #660c72;
+    text-transform:uppercase;
+    line-height: 1em;
+}
+
+
+/* Formulario */
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0;
+    background: #dccef0;
+    border: none;
+}
+
+.formulario input{
+    height: 50px;
+    width: auto;
+    border-radius: 25px;
+    border: 2px solid #7e2af2;
+    padding-left: 15px;
+}
+
+::placeholder{
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+    font-style: normal;
+    color: #48043c;
+    text-align: left;
+}
+
+.formulario input::-webkit-input-placeholder {
+    color: #48043b85;
+}
+
+
+
+
+
+/* Botones */
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 500;
+}
+
+.botones button{
+    height: auto;
+    width: 200px;
+    border-radius: 20px;
+    padding: 1em;
+    font-size: 18px;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 #af7cf5;
+}
+
+.botones button:hover{
+    border-radius: 22px;
+    font-size: 19px;
+    box-shadow: 4px 4px 0 #7e2af2;
+}
+
+.botones button:active{
+    border-radius: 20px;
+    font-size: 18px;
+    box-shadow: 3px 3px 0 #2d0e58;
+}
+
+.btn-enviar{
+    background: #660c72;
+    border: 1px solid #2d0e58;
+    color: #ede7f5;
+}
+
+.btn-limpiar{
+    background: #f5def8;
+    border: 1px solid #660c72;
+    color: #2d0e58;
+}
+
+
+
+
+/* Seccion derecha */
+.secciondos{
+    height: auto;
+    width: 50%;
+    position: relative;
+    display: inherit;
+    flex-direction: column;
+    padding: 2em;
+}
+
+
+/* Productos items */
+.productos{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    box-sizing: border-box;
+}
+
+.productos li{
+    background-color: #440a94;
+    padding: 0.5em 0.2em;
+    border: 2px solid #3d0944;
+    border-radius: 10px;
+    flex: 1 0 29%;
+    margin: 0.5%;
+}
+
+.productos::after{
+    content: "";
+    flex: 0 0 33%;
+}
+
+.productos_item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+.productos_item img{
+    width: 95%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+.descripcion_producto{
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.descripcion_producto img{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: end;
+    cursor: pointer;
+}
+
+.detalles_producto{
+    width: 80%;
+    font-size: 15px;
+    color: #ede7f5;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.detalles_producto p{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+/* Pie de página */
+.footer_items{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+    background-color: #440a94;
+    border-radius: 0 0 5px 5px;
+}
+
+.footer_items h1{
+    margin: 15px 0 0 100px;
+ 
+}
+
+.footer_items p{
+    color: #dccef0;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 5px;
+}
+
+.footer_texto{
+    font-style: italic;
+}
+
+
+
+@media (max-width: 768px) {
+
+}
+
+
+
+
+@media screen and (max-width: 480px){
+
+    /* Titulo Challenge */
+
+.titulo{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1em;
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+
+
+/* Cuerpo */
+main{
+    margin: 0 auto;
+}
+
+.principal{
+    width: 100%;
+}
+
+
+/* Logo */
+.aluralogo{
+    width: auto;
+    padding-left: 60px;
+    border-radius: 0px;
+}
+
+.logo{
+    font-size: 22px;
+}
+
+
+/* Cuerpo central */
+.secciones{
+    flex-direction: column;
+    padding: 1.5em;
+}
+
+
+/* Seccion izquierda */
+.seccionuno{
+    width: 85%;
+}
+
+
+/* Titulo agregar */
+.title{
+    font-size: 22px;
+}
+
+
+/* Formulario */
+.formulario{
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.formulario input{
+    height: 40px;
+}
+
+
+/* Botones */
+.botones{
+    font-weight: 400;
+}
+
+.botones button{
+    width: 170px;
+    font-size: 16px;
+    line-height: 10px;
+}
+
+.botones button:hover{
+    border-radius: 21px;
+    font-size: 17px;
+}
+
+.botones button:active{
+    font-size: 16px;
+}
+
+
+
+
+/* Seccion derecha */
+.secciondos{
+    width: 85%;
+}
+
+
+/* Productos items */
+.productos{
+    margin: 20px 0;
+}
+
+.productos li{
+    border: 1px solid #3d0944;
+    border-radius: 8px;
+    margin: 1%;
+    flex: 1 1 35%;
+}
+
+.productos::after{
+    content: "";
+    flex: 0 0 48%;
+}
+
+.productos_item img{
+    padding-bottom: 3px;
+}
+
+.descripcion_producto{
+    font-weight: 300;
+}
+
+.descripcion_producto img{
+    width: 15px;
+    height: 15px;
+}
+
+.detalles_producto{
+    font-size: 14px;
+    line-height: 15px;
+}
+
+.detalles_producto p{
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+
+/* Pie de página */
+.footer_items{
+    border-radius: 0px;
+}
+
+.footer_items h1{
+    margin: 15px 0 0 120px;
+ 
+}
+
+.footer_items p{
+    font-size: 13px;
+}
+
+.footer_texto{
+    font-style: italic;
+}
+
+}
