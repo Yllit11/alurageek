@@ -15,7 +15,7 @@ function construyeCard(url, titulo, precio, id) {
                                   <p>$ ${precio}</p>
                               </div>
                               <button data-id="${id}">
-                                  <img src="./img/vector.png" alt="Eliminar">
+                                  <img src="./vector.png" alt="Eliminar">
                               </button>
                           </div>`;
 
